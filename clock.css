@@ -1,0 +1,16 @@
+* {
+  font-family: Helvetica
+}
+
+body {
+  background-color: rgb(0, 100, 0)
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.date-input {
+  padding: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Countdown Clock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="clock.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="center">
+  <h1>Countdown until?</h1>
+  
+  <div class="date-input">
+    <label for="year">Year</label>
+    <input id="year" type="number" min="2017" max="2047" />
+  </div>
+  <div class="date-input">
+    <label for="month">Month</label>
+    <input id="month" type="number" min="1" max="12" />
+  </div>
+
+  <div class="date-input">
+    <label for="date">Date</label>
+    <input id="date" type="number" min="1" max="31" />
+  </div>
+
+  <div class="date-input">
+    <label for="hour">Hour</label>
+    <input id="hour" type="number" min="1" max="12" />
+  </div>
+
+  <div class="date-input">
+    <label for="minute">Minute</label>
+    <input id="minute" type="number" min="1" max="59" />
+  </div>
+
+  <div>
+    <select id="meridiem">
+      <option value="am">a.m.</option>
+      <option value="pm">p.m.</option>
+    </select>
+  </div>
+  
+  <div id="start-countdown-button">
+    <button onClick="startCountdown()">Countdown</button>
+  </div>
+
+  <h2 id="countdownDisplay"></h2>
+</div>
+    <script src="clock.js"></script>
+  </body>
+</html>
